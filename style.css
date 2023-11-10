@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.screen{
+    background-color: rgb(50, 52, 55);
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    /* border: 2px dashed yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.nav{
+    width: 90%;
+    height: 8vh;
+    background-color: rgb(219, 185, 65);
+    /* text-shadow: 4px 4px 4px #aaa; */
+    margin-top: 20px;
+    position: relative;
+   display: flex;
+   color: black;
+   border-radius: 20px;
+   justify-content: flex-start;
+   padding-right: 20px;
+}
+.nav i{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left:20px ;
+}
+.nav p{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.textcontainer{
+    width: 90%;
+    height: 70vh;
+    border: 2px dashed rgb(219, 185, 65) ;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(100, 102, 105);
+}
+.textcontainer p{
+    padding: 30px;
+    font-size: 1.8rem;
+    font-family: 'Quicksand','Courier New', Courier, monospace; 
+}
+.textcontainer p span.active{
+    color: aqua;
+}
+.textcontainer p span.active::before{
+    color: aqua;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    content: "";
+    position: absolute;
+    animation: blink 1s ease-in-out infinite;
+    opacity: 0;
+}
+@keyframes blink{
+    50%{
+        opacity: 1;
+    }
+}
+.textcontainer p span.correct{
+    color: green;
+}
+.textcontainer p span.incorrect{
+    color: red;
+    /* background-color: #ffc0cb; */
+    /* border-radius: 4px;
+    outline: 1px dotted red; */
+}
+.mainbtn{
+    width: 90%;
+    height: 5vh;
+    background-color: rgb(219, 185, 65);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.mainbtn ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  font-size: larger;
+
+}
+li{
+    font-size: larger;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li span{
+    font-weight: 800;
+}
+.time{
+    display: flex;
+    padding-top: 10px;
+}
+.mistake{
+    display: flex;
+    padding-top: 10px;
+}
+.wpm{
+    display: flex;
+    padding-top: 10px;
+}
+.Cpm{
+    display: flex;
+    padding-top: 10px;
+}
+li button{
+    width: 12vh;
+    height: 5vh;
+    font-size: large;
+    background-color:  rgb(219, 185, 65);
+    border: 1px solid  rgb(219, 185, 65);;
+}
+li button:hover{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+.someinput{
+    visibility: hidden;
+}
