@@ -139,5 +139,8 @@ li button:hover{
     border-radius: 10px;
 }
 .someinput{
-    visibility: hidden;
+    /* visibility: hidden; */
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
 }
